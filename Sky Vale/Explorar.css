@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #08132E;
+    display: flex;
+    justify-content: center;
+}
+
+.tela {
+    width: 375px;
+    min-height: 100vh;
+    background-color: #0A1B46;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.topo-explorar {
+    padding: 48px 24px 24px 24px;
+}
+
+.explorar-titulo {
+    color: white;
+    font-size: 24px;
+}
+
+.explorar-subtitulo {
+    color: #C7CEDD;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.conteudo-explorar {
+    background-color: #F5F6FA;
+    border-radius: 20px 20px 0 0;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.destino-card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(10, 27, 70, 0.06);
+}
+
+.destino-foto {
+    width: 100%;
+    height: 80px;
+}
+
+.img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F2F6;
+    border: 1px dashed #C9CEDA;
+    color: #8A90A3;
+    font-size: 10px;
+    text-align: center;
+}
+
+.destino-info {
+    padding: 10px 12px;
+}
+
+.destino-nome {
+    color: #0A1B46;
+    font-size: 13px;
+}
+
+.destino-descricao {
+    color: #8A90A3;
+    font-size: 11px;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.destino-link,
+.destino-link:visited {
+    display: inline-block;
+    color: #C89404;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    background-color: #0A1B46;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 8px 16px 8px;
+}
+
+.nav-item,
+.nav-item:visited {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #7C87A6;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item.ativo {
+    color: #C89404;
+}
+
+.nav-icone {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: none;
+    border: none;
+}
