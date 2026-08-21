@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #08132E;
+    display: flex;
+    justify-content: center;
+}
+
+.tela {
+    width: 375px;
+    min-height: 100vh;
+    background-color: #0A1B46;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.topo-detalhes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 24px 20px 24px;
+}
+
+.voltar {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.detalhes-titulo {
+    color: white;
+    font-size: 18px;
+}
+
+.foto-aeronave {
+    width: 100%;
+    height: 160px;
+    margin: 0 0 -16px 0;
+}
+
+.img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    text-align: center;
+}
+
+.conteudo-detalhes {
+    background-color: #F5F6FA;
+    border-radius: 20px 20px 0 0;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.detalhes-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.aeronave-nome {
+    color: #0A1B46;
+    font-size: 19px;
+}
+
+.aeronave-tipo {
+    color: #8A90A3;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.duracao-badge {
+    background-color: #FDF0D8;
+    color: #A97400;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.rota-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(10, 27, 70, 0.06);
+}
+
+.rota-ponto {
+    display: flex;
+    flex-direction: column;
+}
+
+.rota-ponto-direita {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.rota-hora {
+    color: #0A1B46;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rota-cidade {
+    color: #4A5068;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.rota-data {
+    color: #B0B5C4;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.rota-linha {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 10px;
+    color: #C89404;
+}
+
+.rota-linha-traco {
+    flex: 1;
+    height: 1px;
+    background-color: #DADFE8;
+}
+
+.rota-linha-icone {
+    font-size: 14px;
+}
+
+.secao-titulo {
+    color: #0A1B46;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.servicos-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.servicos-lista li {
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #4A5068;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(10, 27, 70, 0.04);
+}
+
+.servico-icone {
+    font-size: 15px;
+}
+
+.rodape-detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.preco-total {
+    color: #0A1B46;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.preco-legenda {
+    color: #8A90A3;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.btn-reservar,
+.btn-reservar:visited,
+.btn-reservar:hover,
+.btn-reservar:active {
+    background-color: #C89404;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    background-color: #0A1B46;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 8px 16px 8px;
+}
+
+.nav-item,
+.nav-item:visited {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #7C87A6;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item.ativo {
+    color: #C89404;
+}
+
+.nav-icone {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: none;
+    border: none;
+}

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #08132E;
+    display: flex;
+    justify-content: center;
+}
+
+.tela {
+    width: 375px;
+    min-height: 100vh;
+    background-color: #0A1B46;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.topo-resultados {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 24px 28px 24px;
+}
+
+.voltar {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.resultados-titulo {
+    color: white;
+    font-size: 18px;
+}
+
+.rota {
+    color: #C7CEDD;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.seta {
+    color: #C89404;
+}
+
+.conteudo-resultados {
+    background-color: #F5F6FA;
+    border-radius: 20px 20px 0 0;
+    padding: 24px;
+}
+
+.lista-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    text-align: center;
+}
+
+.voo-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(10, 27, 70, 0.06);
+}
+
+.voo-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.voo-horario {
+    color: #0A1B46;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.voo-preco {
+    color: #0A1B46;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.voo-rota {
+    color: #B0B5C4;
+    font-size: 11px;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
+.voo-duracao {
+    color: #8A90A3;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.voo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.voo-aeronave {
+    color: #4A5068;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.voo-selecionar,
+.voo-selecionar:visited,
+.voo-selecionar:hover,
+.voo-selecionar:active {
+    background-color: #C89404;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    background-color: #0A1B46;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 8px 16px 8px;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #7C87A6;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item.ativo {
+    color: #C89404;
+}
+
+.nav-icone {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: none;
+    border: none;
+}
