@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #08132E;
+    display: flex;
+    justify-content: center;
+}
+
+.tela {
+    width: 375px;
+    min-height: 100vh;
+    background-color: #0A1B46;
+    position: relative;
+    padding: 40px 24px 90px 24px;
+    overflow: hidden;
+}
+
+.container-titulos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.Sky {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Vale {
+    color: #C89404;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Subtitulo {
+    color: #C7CEDD;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.Subsubtitulo {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 32px;
+}
+
+.Descricao {
+    color: #C7CEDD;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 12px;
+    padding: 0 12px;
+}
+
+.topo-imagens {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.topo-imagem {
+    flex: 1;
+    width: 100%;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.Explore {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-icone {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.card-label {
+    color: #0A1B46;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.conteudo-extra {
+    min-height: 20px;
+}
+
+.img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    text-align: center;
+}
+
+.card .img-placeholder {
+    background-color: #EFEFEF;
+    border: 1px dashed #B9B9B9;
+    color: #8A8A8A;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    background-color: #0A1B46;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 8px 16px 8px;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #7C87A6;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item.ativo {
+    color: #C89404;
+}
+
+.nav-icone {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: none;
+    border: none;
+}
