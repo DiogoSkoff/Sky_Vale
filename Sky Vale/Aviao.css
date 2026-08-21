@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #08132E;
+    display: flex;
+    justify-content: center;
+}
+
+.tela {
+    width: 375px;
+    min-height: 100vh;
+    background-color: #0A1B46;
+    position: relative;
+    padding: 40px 24px 90px 24px;
+    overflow: hidden;
+}
+
+.container-titulos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.topo-reserva {
+    position: relative;
+    min-height: 175px;
+}
+
+.container-titulos-topo {
+    justify-content: flex-start;
+    gap: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-pequena {
+    width: 26px;
+    height: 26px;
+}
+
+.Sky {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Vale {
+    color: #C89404;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Sky-pequeno,
+.Vale-pequeno {
+    font-size: 20px;
+}
+
+.Subtitulo {
+    color: #C7CEDD;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.Subtitulo-topo {
+    text-align: left;
+    margin-top: 2px;
+    letter-spacing: 2px;
+}
+
+.saudacao {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    max-width: 60%;
+    position: relative;
+    z-index: 1;
+}
+
+.pergunta {
+    color: #C7CEDD;
+    font-size: 13px;
+    margin-top: 4px;
+    max-width: 60%;
+    position: relative;
+    z-index: 1;
+}
+
+.aviao-fundo {
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    width: 170px;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    text-align: center;
+}
+
+.form-card {
+    background-color: white;
+    border-radius: 20px;
+    margin: -16px -24px 0 -24px;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-titulo {
+    color: #0A1B46;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+.campo {
+    margin-bottom: 14px;
+}
+
+.campo label {
+    display: block;
+    color: #0A1B46;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #DADFE8;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #333333;
+    background-color: white;
+}
+
+.campo input::placeholder {
+    color: #B6BBC6;
+}
+
+.campo select {
+    width: 100%;
+    padding: 10px 36px 10px 12px;
+    border: 1px solid #DADFE8;
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%230A1B46' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    cursor: pointer;
+}
+
+.campo select:invalid {
+    color: #B6BBC6;
+}
+
+.btn-buscar,
+.btn-buscar:visited,
+.btn-buscar:hover,
+.btn-buscar:active {
+    width: 100%;
+    background-color: #C89404;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    background-color: #0A1B46;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 8px 16px 8px;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #7C87A6;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item.ativo {
+    color: #C89404;
+}
+
+.nav-icone {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: none;
+    border: none;
+}
