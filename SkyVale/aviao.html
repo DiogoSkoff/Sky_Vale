@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVale - Reservar Voo</title>
+    <link rel="stylesheet" href="aviao.css">
+</head>
+<body>
+    <div class="tela">
+
+        <div class="topo-reserva">
+            <div class="container-titulos container-titulos-topo">
+                <img src="skyvalelogo.png" alt="SkyValelogo" class="logo logo-pequena">
+                <span class="Sky Sky-pequeno">Sky</span><span class="Vale Vale-pequeno">Vale</span>
+            </div>
+            <p class="Subtitulo Subtitulo-topo">PRIVATE TRAVEL</p>
+
+            <h2 class="saudacao">Olá, Helder</h2>
+            <p class="pergunta">Para onde vamos hoje?</p>
+
+            <img src="aviaodateladeola.png" alt="Avião" class="aviao-fundo">
+        </div>
+
+        <div class="form-card">
+            <h3 class="form-titulo">Reserve seu voo</h3>
+
+            <div class="campo">
+                <label for="origem">De onde? (origem)</label>
+                <input type="text" id="origem" name="origem" placeholder="Digite a cidade de origem">
+            </div>
+
+            <div class="campo">
+                <label for="destino">Para onde? (destino)</label>
+                <input type="text" id="destino" name="destino" placeholder="Digite aonde você quer ir">
+            </div>
+
+            <div class="campo">
+                <label for="data">Data da viagem</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <div class="campo">
+                <label for="horario">Horário</label>
+                <input type="text" id="horario" name="horario" placeholder="Que hora do dia?">
+            </div>
+
+            <div class="campo">
+                <label for="passageiros">Total de passageiros</label>
+                <select id="passageiros" name="passageiros">
+                    <option value="" selected disabled>Quantas pessoas?</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5+">5 ou mais</option>
+                </select>
+            </div>
+
+            <a href="resultadoaviao.html" class="btn-buscar">Buscar Voos</a>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <div class="nav-icone img-placeholder">🏠</div>
+                <span>Início</span>
+            </a>
+            <a href="aviao.html" class="nav-item ativo">
+                <div class="nav-icone img-placeholder">🔍</div>
+                <span>Buscar</span>
+            </a>
+            <a href="explorar.html" class="nav-item">
+                <div class="nav-icone img-placeholder">🧭</div>
+                <span>Explorar</span>
+            </a>
+            <a href="favoritos.html" class="nav-item">
+                <div class="nav-icone img-placeholder">❤</div>
+                <span>Favoritos</span>
+            </a>
+            <a href="perfil.html" class="nav-item">
+                <div class="nav-icone img-placeholder">👤</div>
+                <span>Perfil</span>
+            </a>
+        </nav>
+
+    </div>
+</body>
+</html>

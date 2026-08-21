@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVale - Dados do passageiro</title>
+    <link rel="stylesheet" href="passageiro.css">
+</head>
+<body>
+    <div class="tela">
+
+        <div class="topo-passageiro">
+            <a href="resultadoaviao.html" class="voltar">←</a>
+            <div>
+                <h2 class="passageiro-titulo">Dados do passageiro</h2>
+                <p class="passageiro-subtitulo">Preencha os dados para continuar</p>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <h3 class="form-secao-titulo">Informe seus dados</h3>
+
+            <div class="campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número">
+            </div>
+
+            <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            </div>
+
+            <p class="form-secao-titulo form-secao-titulo-preferencias">Preferências</p>
+
+            <label class="checkbox-linha">
+                <input type="checkbox" name="wifi">
+                Wi-Fi a bordo
+            </label>
+
+            <label class="checkbox-linha">
+                <input type="checkbox" name="refeicao">
+                Refeição especial
+            </label>
+
+            <a href="pagamento.html" class="btn-continuar">Continuar para o pagamento</a>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <div class="nav-icone img-placeholder">🏠</div>
+                <span>Início</span>
+            </a>
+            <a href="aviao.html" class="nav-item">
+                <div class="nav-icone img-placeholder">🔍</div>
+                <span>Buscar</span>
+            </a>
+            <a href="explorar.html" class="nav-item">
+                <div class="nav-icone img-placeholder">🧭</div>
+                <span>Explorar</span>
+            </a>
+            <a href="favoritos.html" class="nav-item">
+                <div class="nav-icone img-placeholder">❤</div>
+                <span>Favoritos</span>
+            </a>
+            <a href="perfil.html" class="nav-item">
+                <div class="nav-icone img-placeholder">👤</div>
+                <span>Perfil</span>
+            </a>
+        </nav>
+
+    </div>
+</body>
+</html>
